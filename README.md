@@ -3,8 +3,6 @@ Open source Highway bot for 2y2c, now i can't develop that because i have many w
 
 This is 2y2c highway selfbot
 
-Bot has develop by HackerShader#5959
-
 If you copy this source, you need to change your token in config.json
 
 # How to change token?
@@ -27,5 +25,3 @@ If you copy this source, you need to change your token in config.json
 "moment": "^2.29.1",
 
 "superagent": "^6.1.0"
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=HackerShader&show_icons=true&theme=cobalt)
