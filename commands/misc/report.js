@@ -6,13 +6,16 @@ module.exports = {
     name:"report",
     description: "Report cho thằng DEV",
     execute(bot, msg, args) {
+        if(!args[0]) return msg.reply('Vui lòng nhập điều bạn muốn report');
+        const admin = await bot.users.fetch('806808416621559828')
+        msg.reply('Đã gửi thành công')
         const srcembed = new Discord.MessageEmbed()
             .setColor(randColor())
             .setAuthor('main/misc/source', 'https://media.discordapp.net/attachments/745095165554851922/859821849545408532/lol.gif?width=447&height=447')
-            .setDescription('⚠ Đây là source code bot của StatusHighway\nTất cả thông tin sẽ được gửi vào cuộc trò chuyện riêng (Direct Messages) của bạn')
+            .setDescription(`${args.join(' ')}`)
             .setTitle('Sourcecode v1.7')
             .setTimestamp()
             .setFooter(`${msg.author.tag}`,`${msg.author.displayAvatarURL()}`)
-        msg.reply(srcembed).then(msg.author.send('Update 18/9/2021: https://github.com/HackerShader/StatusHighwayv11'))
+        admin.send(srcembed)
     }
 }
