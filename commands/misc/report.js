@@ -3,9 +3,9 @@ function randColor() {
 	return Math.floor(Math.random()*16777215).toString(16);
 }
 module.exports = {
-    name:"report",
+    name: "report",
     description: "Report cho thằng DEV",
-    execute(bot, msg, args) {
+    async execute(bot, msg, args) {
         if(!args[0]) return msg.reply('Vui lòng nhập điều bạn muốn report');
         const admin = await bot.users.fetch('806808416621559828')
         msg.reply('Đã gửi thành công')
