@@ -5,6 +5,7 @@ This is 2y2c highway selfbot
 
 If you copy this source, you need to change your token in config.json
 
+HackerShader
 # How to change token?
 
 1.access config.json
